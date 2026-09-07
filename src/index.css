@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Default dark theme tokens */
+    --color-bg-base: #0C0D0F;
+    --color-surface-card: #15171A;
+    --color-surface-elevated: #1A1D21;
+    --color-border-subtle: #22252A;
+    --color-border-hover: #2A2E35;
+    --color-text-primary: #F3F4F6;
+    --color-text-secondary: #9CA3AF;
+    --color-text-muted: #606773;
+    --color-scrollbar-thumb: #22252A;
+    --color-scrollbar-hover: #2A2E35;
+  }
+  
+  html.light {
+    --color-bg-base: #F4F5F7;
+    --color-surface-card: #FFFFFF;
+    --color-surface-elevated: #F9FAFB;
+    --color-border-subtle: #E5E7EB;
+    --color-border-hover: #D1D5DB;
+    --color-text-primary: #111827;
+    --color-text-secondary: #4B5563;
+    --color-text-muted: #9CA3AF;
+    --color-scrollbar-thumb: #D1D5DB;
+    --color-scrollbar-hover: #9CA3AF;
+  }
+
+  html.dark {
+    --color-bg-base: #0C0D0F;
+    --color-surface-card: #15171A;
+    --color-surface-elevated: #1A1D21;
+    --color-border-subtle: #22252A;
+    --color-border-hover: #2A2E35;
+    --color-text-primary: #F3F4F6;
+    --color-text-secondary: #9CA3AF;
+    --color-text-muted: #606773;
+    --color-scrollbar-thumb: #22252A;
+    --color-scrollbar-hover: #2A2E35;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+.font-mono-numbers {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Sleek custom scrollbars for high-density UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb, #22252A);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-hover, #2A2E35);
+}
+

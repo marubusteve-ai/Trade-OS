@@ -1,0 +1,6 @@
+{
+  "name": "TradeOS - Trading Operating System",
+  "description": "Professional-grade Trading Performance Operating System featuring customizable multi-workspace dashboards, quant edge visualizations, prop-firm compliance tracking, and centralized financial calculation engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
